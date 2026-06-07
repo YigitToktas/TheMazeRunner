@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TheMazeRunner</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TheMazeRunner.styles.css" asp-append-version="true" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="~/css/stilim.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark seffaflik">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5 labirent_logo" asp-area="" asp-controller="Home" asp-action="Index">LABİRENT</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto gap-5 oswald" style="letter-spacing:2px; font-size:15px;">
+                        <li class="nav-item buyume">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item buyume">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Filmler</a>
+                        </li>
+                        <li class="nav-item buyume">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Karakterler">Karakterler</a>
+                        </li>
+                        <li class="nav-item buyume">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Labirent">Labirent</a>
+                        </li>
+                        <li class="nav-item buyume">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Hakkinda">Hakkında & İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

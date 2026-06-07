@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid p-0 border-0">
+    <div class="card text-bg-dark">
+        <img src="~/images/maze-dikey.jpg" class="card-img w-100 d-block" style="filter:brightness(35%); height:120vw; background-size:cover">
+        <div class="card-img-overlay d-flex flex-column align-items-center text-center" style="padding-top:10rem;">
+            <h1 class="card-title orta_yazi">LABİRENT</h1>
+            <p class="card-text finlandica" style="letter-spacing:1.5px; font-size:21px;">Thomas kendisini devasa bir <font class="buyume" style="font-weight:bold;">LABİRENT</font> ortasındaki ormanın içinde bulur<br /> hafızası silinmiştir ve kaçmanın bir yolunu bulmalıdır.</p>
+
+            <a class="nav-link text-white border-0 butonum mt-3 rounded-3 bebas" style="width:16vw; height:3vw; box-shadow:0px 0px 50px #226907;" asp-area="" asp-controller="Home" asp-action="Privacy">Filmler</a>
+            
+            <div class="d-flex align-items-center" style="margin-top:5%; width:100%; color:#fff; font-family:'Bebas Neue', sans-serif; letter-spacing:6.5px;">
+                <hr class="flex-grow-1 m-0" style="border-top:4px solid rgba(255,255,255);" />
+                <span style="padding:0 16px; font-size:30px; white-space:nowrap; color:#fff;">Film Serisi</span>
+                <hr class="flex-grow-1 m-0" style="border-top:4px solid rgba(255,255,255);" />
+            </div>
+            
+            <div class="container-fluid p-0" style="margin-top:5%;">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card text-bg-dark border-0 bg-transparent w-75 m-auto parlaklık_kisma" style="border-radius:60px; box-shadow:0px 0px 60px rgba(255, 255, 255, 0.80);">
+
+
+                            <img src="~/images/Labirent - Ölümcül Kaçış.jpg" class="card-img " alt="...">
+
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h1 class="card-title bebas baslik">LABİRENT</h1>
+
+                                <span class="card-text bebas altbaslik">
+                                    Ölümcül Kaçış
+                                </span>
+                                
+                                <span class="bebas yil">
+                                    2014
+                                </span>
+                            </div>
+                            <a class="stretched-link" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="ölümcül_kaçış"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-dark border-0 bg-transparent w-75 m-auto parlaklık_kisma" style="border-radius:60px; box-shadow:0px 0px 60px rgba(255, 255, 255, 0.80);">
+                            <img src="~/images/Labirent - Alev Deneyleri.jpg" style="border-radius:15px;" class="card-img " alt="...">
+
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h1 class="card-title bebas baslik">LABİRENT</h1>
+
+                                <span class="card-text bebas altbaslik">
+                                    Alev Deneyleri
+                                </span>
+                                <span class="bebas yil">
+                                    2015
+                                </span>
+                            </div>
+                            <a class="stretched-link" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="alev_deneyleri"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-dark border-0 bg-transparent w-75 m-auto parlaklık_kisma" style="border-radius:60px; box-shadow:0px 0px 60px rgba(255, 255, 255, 0.80);">
+                            <img src="~/images/Labirent - Son İsyan.jpg" style="border-radius:15px;" class="card-img" alt="...">
+
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h1 class="card-title bebas baslik" >LABİRENT</h1>
+
+                                <span class="card-text bebas altbaslik">
+                                    Son İsyan
+                                </span>
+                                <span class="bebas yil">
+                                    2018
+                                </span>
+                            </div>
+                            <a class="stretched-link" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="son_isyan"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

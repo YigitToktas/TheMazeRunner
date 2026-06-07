@@ -1,0 +1,90 @@
+﻿* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    color:white;
+}
+body {
+
+}
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.seffaflik {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+.labirent_logo {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.orta_yazi {
+    font-size: 120px;
+    letter-spacing: 12px;
+    filter: drop-shadow(8px 8px 2px rgba(0,0,0,0.2));
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+.labirent_logo:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+.buyume:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+ul li:hover {
+    border-bottom: solid 1px;
+}
+.finlandica {
+    font-family: 'Finlandica Headline', sans-serif !important;
+}
+.bebas {
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+.parlaklık_kisma {
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+.parlaklık_kisma:hover {
+    filter: brightness(80%);
+}
+.baslik {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.altbaslik {
+    font-size: clamp(1rem, 4vw, 2.1rem);
+}
+
+.yil {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.butonum {
+    background-color: #00540F;
+    backdrop-filter: blur(4px);
+    filter: opacity(70%);
+    letter-spacing:1.5px;
+    font-size:1.5vw;
+}
+
+    .butonum:hover {
+        transition:0.3s;
+        background-color: #00540F;
+        filter: opacity(100%);
+    }
+
+::selection {
+    background-color: #226907;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}

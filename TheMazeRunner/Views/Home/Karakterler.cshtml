@@ -1,0 +1,627 @@
+﻿@{
+    ViewData["Title"] = "Karakterler";
+}
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #171717;
+    }
+
+    .golge_ve_parlaklık {
+        filter:brightness(45%);
+        transition:0.3s ease;
+    }
+
+    .golge_ve_parlaklık:hover {
+        filter:brightness(100%);
+            box-shadow: 0px 0px 41px #226907;
+    }
+
+    .karakter-kart {
+        height: 310px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+        .karakter-kart img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .filmler-baslik h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 66px;
+        letter-spacing: 6px;
+        margin: auto;
+    }
+
+    .filmler-baslik p {
+        margin: auto;
+        font-size: 28px;
+        letter-spacing: 3px;
+        color: #7a9a52;
+        font-family: 'Bebas Neue', sans-serif;
+        text-shadow: 0px 0px 30px #226907;
+    }
+
+</style>
+
+<div class="container-fluid mt-5 overflow-hidden">
+
+    <div class="filmler-baslik text-center justify-content-center" style="margin-top:5%;">
+        <h1>Karakterler</h1>
+        <p>Labirent Serisinin Tüm Karakterleri</p>
+        <p>BU SERİYİ İZLEYİN, İZLETTİRİN!</p>
+    </div>
+
+    <div class="row g-4 p-3 mt-5 justify-content-center">
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#thomasModal">
+
+
+                <img src="~/characters/Thomas.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">THOMAS</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#minhoModal">
+
+
+                <img src="~/characters/minho.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">MİNHO</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#newtModal">
+
+
+                <img src="~/characters/newt.jpg"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">NEWT</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#teresaModal">
+
+
+                <img src="~/characters/teresa.jfif"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">TERESA</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#chuckModal">
+
+
+                <img src="~/characters/chuck.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">CHUCK</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#gallyModal">
+
+
+                <img src="~/characters/gally.jpeg"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">GALLY</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#vinceModal">
+
+
+                <img src="~/characters/vince.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">VİNCE</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#jorgeModal">
+
+
+                <img src="~/characters/jorge.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">JORGE</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#brendaModal">
+
+
+                <img src="~/characters/brenda00.jpg"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">BRENDA</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#winstonModal">
+
+
+                <img src="~/characters/winston.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">WİNSTON</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#arisModal">
+
+
+                <img src="~/characters/aris.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">ARİS</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#lawranceModal">
+
+
+                <img src="~/characters/lawrence.jpg"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">LAURANCE</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#avapaigeModal">
+
+
+                <img src="~/characters/ava_paige.jpg"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">AVA PAİGE</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            <div class="card karakter-kart text-white golge_ve_parlaklık overflow-hidden" data-bs-toggle="modal" data-bs-target="#jansonModal">
+
+
+                <img src="~/characters/janson.webp"
+                     class="card-img"
+                     style="height: 420px; object-fit: cover;">
+
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                    <h3 class="card-title fw-bold">JANSON</h3>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="thomasModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">THOMAS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Thomas, The Maze Runner serisinin ana karakteridir. Labirent’e hafızasını kaybetmiş şekilde gönderilen gençlerden biridir. Diğerlerinin aksine kurallara körü körüne uymak yerine sürekli sorgular ve Labirent’in arkasındaki gerçeği öğrenmeye çalışır. Cesareti, merakı ve liderlik özellikleri sayesinde kısa sürede diğer Kayranlılar’ın dikkatini çeker.
+
+                    Başlangıçta sadece hayatta kalmaya çalışan Thomas, zamanla WCKD organizasyonunun insanları deneylerde kullandığını öğrenir ve buna karşı savaşmaya başlar. Özellikle Teresa ile olan bağlantısı, olayların merkezinde yer almasına neden olur. Seri boyunca birçok kez arkadaşlarını kurtarmak için kendi hayatını riske atar.
+                    <br /> <br />
+                    Thomas’ın tarafı tamamen özgürlük ve insanlıktır. WCKD’nin “insanlığı kurtarmak için her şey mübah” düşüncesine karşı çıkar. Onun amacı sadece hayatta kalmak değil, aynı zamanda arkadaşlarını korumak ve insanları deneylerden kurtarmaktır.
+                    <br /> <br />
+                    Karakter olarak cesur, inatçı, fedakâr ve lider ruhludur. Bazen düşünmeden hareket etse de bu özelliği çoğu zaman insanlara umut verir. Özellikle Newt, Minho ve diğer arkadaşlarıyla kurduğu bağ, onun en güçlü yönlerinden biridir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="minhoModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">MİNHO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Minho, The Maze Runner serisinde Kayran (Glade) içinde “Koşucu (Runner)” grubunun lideridir. Koşucular, her gün Labirent’e girerek çıkış yolunu arayan ve Labirent’in haritasını çıkaran özel gruptur. Minho, bu grubun en deneyimli ve en hızlı karar veren üyesidir.
+                    <br /> <br />
+                    Görevi Labirent’in içini keşfetmek, güvenli rotaları belirlemek ve “Değişen (Griever)” tehlikesine rağmen harita bilgisi toplamaktır. Aynı zamanda Koşucuların yöneticisi olarak hangi bölgeye kimin gireceğine karar verir.
+                    <br /> <br />
+                    Minho’nun tarafı Kayran’daki diğer gençlerle aynıdır ve WCKD’ye karşıdır. Labirentten çıkış yolunu bulmak ve dış dünyaya ulaşmak için Thomas ve diğerleriyle birlikte hareket eder.
+                    <br /> <br />
+                    Hikâyedeki rolü, bilgi toplayan ve Labirent’i çözen ana keşif gücü olmaktır. Thomas’ın planlarını uygulamasında en önemli destekçilerden biridir ve Labirent’in yapısını en iyi anlayan kişidir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="newtModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">NEWT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Newt, The Maze Runner serisinde Kayran (Glade) içindeki en üst yönetim grubunda yer alan “yardımcı lider” konumundadır. Thomas gelmeden önce Alby ile birlikte Kayran’ın düzenini sağlayan iki ana kişiden biridir.
+                    <br /> <br />
+                    Görevi, Kayran’daki düzeni korumak, günlük işleyişi yönetmek ve farklı gruplar (Koşucular, İnşaatçılar, Çiftçiler vb.) arasında dengeyi sağlamaktır. Liderlik hiyerarşisinde Alby’den sonra gelir ve Alby olmadığında fiilen liderlik yapar.
+                    <br /> <br />
+                    Newt, aynı zamanda Labirent’e giren Koşucuların güvenliğinden sorumlu organizasyonel kararları da etkiler. Ancak aktif olarak Labirent’e giren bir Koşucu değildir; daha çok yönetim ve koordinasyon tarafındadır.
+                    <br /> <br />
+                    Tarafı Kayran’daki diğer gençlerle aynıdır ve WCKD’ye karşıdır. Ama çoğu zaman olaylara daha temkinli yaklaşır ve gereksiz riskleri engellemeye çalışır.
+
+                    Hikâyedeki rolü, düzeni sağlayan ve grubun dağılmasını engelleyen denge unsurudur. Thomas’ın radikal fikirleri ile eski düzen arasında köprü görevi görür ve karar süreçlerinde kritik etki sahibidir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="teresaModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">TERESA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Teresa, The Maze Runner serisinde Kayran’a gönderilen ilk ve tek kız karakterlerden biridir. Hafızasını kaybetmiş şekilde Labirent’e gönderilir ve diğer Kayranlılar gibi başlangıçta neden orada olduğunu bilmez.
+                    <br /> <br />
+                    Görevi doğrudan fiziksel bir iş değil, WCKD (WICKED) tarafından başlatılan deney sürecinin önemli bir parçası olmaktır. Thomas ile arasında özel bir zihinsel bağlantı bulunur ve bu bağlantı WCKD’nin deneylerinde kritik rol oynar. Bu yüzden hikâyede sadece bir Kayran üyesi değil, aynı zamanda deneyin “ana anahtar” karakterlerinden biridir.
+                    <br /> <br />
+                    Teresa’nın tarafı karmaşıktır. Başlangıçta WCKD ile uyumlu hareket eder çünkü onların insanlığı kurtarmaya çalıştığına inanır. Ancak süreç ilerledikçe yaşanan olaylar onun da bu sisteme karşı sorgulama yapmasına neden olur. Yine de Thomas’a kıyasla daha “sistemin içinde” kalmış bir pozisyonda uzun süre bulunur.
+                    <br /> <br />
+                    Hikâyedeki rolü, Thomas ile WCKD arasındaki bağlantıyı kuran karakter olmasıdır. Olayların başlatılmasında ve ilerlemesinde kilit rol oynar. Aynı zamanda Labirent sürecinin neden var olduğunu açıklayan en önemli parçalardan biridir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="chuckModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">CHUCK</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Chuck, The Maze Runner serisinde Kayran’a (Glade) yeni gelen en genç üyelerden biridir. Hafızası silinmiş şekilde Labirent’e gönderilir ve sistem içinde en az deneyime sahip kişilerden biri olarak “çaylak” konumundadır.
+                    <br /> <br />
+                    Görevi herhangi bir özel meslek değil, Kayran içinde verilen küçük işleri yaparak düzene katkı sağlamaktır. Genellikle mutfak işleri, taşıma işleri ve temel yardımcı görevlerde bulunur. Daha çok “yardımcı iş gücü” rolündedir ve Kayran’ın günlük yaşamında aktif olarak yer alır.
+                    <br /> <br />
+                    Chuck’ın tarafı Thomas ve diğer Kayranlılarla aynıdır. WCKD’ye karşı bir taraf seçme durumu doğrudan olmasa da, Kayran içindeki arkadaşlarını ve özellikle Thomas’ı benimser ve onlara güven duyar.
+                    <br /> <br />
+                    Hikâyedeki rolü, Kayran’ın insani yönünü temsil etmektir. En genç ve en savunmasız karakterlerden biri olarak, olayların ciddiyetini ve Labirent’in tehlikesini daha görünür hale getirir. Thomas ile kurduğu bağ, onun hikâyedeki duygusal ve motivasyon yönünü güçlendirir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="gallyModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">GALLY</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Gally, The Maze Runner serisinde Kayran (Glade) içinde özellikle “Koşucular” ve liderlik düzenine karşı çıkan, daha çok “kuralları savunan grup” içinde yer alan bir karakterdir. Kayran’daki eski düzeni ve kuralların değişmemesini isteyen tarafın önemli isimlerinden biridir.
+                    <br /> <br />
+                    Görevi doğrudan bir meslekten çok, Kayran içindeki düzenin korunmasına destek olmaktır. Labirent’e giren Koşucuların riskli planlarına karşı çıkar ve Kayran’ın güvenliğinin öncelik olması gerektiğini savunur. Bu yüzden sık sık Thomas ve Minho gibi risk alan karakterlerle çatışma yaşar.
+                    <br /> <br />
+                    Gally’nin tarafı başlangıçta Thomas’a ve değişim isteyen gruba karşıdır. WCKD’ye karşı net bir duruşu vardır ama yöntemi “kuralları bozmadan hayatta kalmak” üzerinedir. Bu yüzden Kayran içinde daha muhafazakâr bir çizgide durur.
+                    <br /> <br />
+                    Hikâyedeki rolü, düzen ve kaos arasındaki çatışmayı temsil etmektir. Thomas’ın yenilikçi ve risk alan yaklaşımına karşı çıkarak hikâyede iç gerilim yaratır. Aynı zamanda Kayran içindeki fikir ayrılıklarını ve hayatta kalma stratejilerinin farklılığını gösterir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="vinceModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">VİNCE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Vince, The Maze Runner serisinin özellikle The Death Cure bölümünde ortaya çıkan “The Right Arm” adlı direniş grubunun lideridir. Bu grup, WCKD’ye karşı aktif savaş yürüten ve hayatta kalan insanları kurtarmayı amaçlayan bir organizasyondur.
+                    <br /> <br />
+                    Görevi, The Right Arm direnişinin askeri liderliğini yapmak ve WCKD’ye karşı operasyonları planlamaktır. Aynı zamanda kurtarma operasyonlarını yönetir, güvenli bölgeler oluşturur ve WCKD tesislerine saldırı düzenler. Stratejik olarak daha çok askeri komutan rolündedir.
+                    <br /> <br />
+                    Vince’in tarafı kesin olarak WCKD karşıtıdır. WCKD’nin “insanlığı kurtarma” adı altında yaptığı deneylere ve çocuklar üzerinde yürüttüğü çalışmalara karşı çıkar ve onları yok etmeyi hedefler.
+                    <br /> <br />
+                    Hikâyedeki rolü, Kayran’dan çıkan grubun dış dünyadaki en güçlü müttefiki olmasıdır. Thomas ve arkadaşlarının WCKD’ye karşı verdiği savaşta onlara askeri destek sağlayan ana liderlerden biridir ve hikâyenin final çatışmalarında önemli bir rol oynar.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="jorgeModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">JORGE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Jorge, The Maze Runner serisinde The Scorch Trials bölümünde tanıtılan, “Scorch” adı verilen çorak ve tehlikeli bölgede hayatta kalan gruplardan biri olan “Scavenger”ların lideridir.
+                    <br /> <br />
+                    Görevi, Scorch bölgesinde hayatta kalmak, kaynak bulmak ve grubunu WCKD’nin ve enfekte “Crank”ların saldırılarından korumaktır. Aynı zamanda bölgedeki ticaret ve güvenlik ağını yöneten, hayatta kalma odaklı bir liderdir. Şehirler arası hareket eden kaçakçılarla bağlantısı vardır ve bilgi/ekipman takası yapar.
+                    <br /> <br />
+                    Jorge’nin tarafı başlangıçta tamamen “hayatta kalma” odaklıdır ve hiçbir büyük fraksiyona bağlı değildir. Ancak Thomas ve diğer Kayranlılarla karşılaştıktan sonra WCKD’ye karşı direnişe daha yakın bir pozisyona geçer.
+                    <br /> <br />
+                    Hikâyedeki rolü, dış dünyanın (Scorch’un) nasıl tamamen çöktüğünü gösteren karakterlerden biridir. Aynı zamanda Thomas grubunun Scorch içinde hayatta kalmasını sağlayan rehber ve yerel bağlantı noktasıdır.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="brendaModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">BRENDA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Brenda, The Maze Runner serisinde The Scorch Trials bölümünde ortaya çıkan ve Scorch bölgesinde hayatta kalmaya çalışan “Crank” tehdidi altındaki bir grubun üyesidir. Daha sonra Jorge’nin ekibiyle birlikte hareket eden önemli bir karakter haline gelir.
+                    <br /> <br />
+                    Görevi doğrudan bir sistem işi değil, Scorch ortamında hayatta kalmaktır. Enfekte olmuş “Crank”lara karşı savunma yapmak, güvenli bölgeleri bulmak ve kaynak sağlamak onun ve grubunun temel yaşam mücadelesidir. Aynı zamanda Jorge’nin grubuyla birlikte hareket ederek hayatta kalma ağı içinde aktif rol alır.
+                    <br /> <br />
+                    Brenda’nın tarafı başlangıçta net bir fraksiyona bağlı değildir; önceliği hayatta kalmaktır. Ancak Thomas ve ekibiyle tanıştıktan sonra WCKD’ye karşı direniş tarafına yaklaşır ve onlara yardım eder.
+                    <br /> <br />
+                    Hikâyedeki rolü, Scorch dünyasının acımasızlığını ve enfeksiyon tehdidini doğrudan gösteren karakterlerden biridir. Aynı zamanda Thomas’ın dış dünyadaki mücadelesinde güvenilir bir müttefik olarak yer alır ve ekibin Scorch’tan çıkış sürecinde kritik destek sağlar.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="winstonModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">WİNSTON</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Winston, The Maze Runner serisinde Kayran (Glade) içinde yaşayan gençlerden biridir ve özellikle “Çiftçiler / Mutfak işleri” gibi temel yaşam düzenini sağlayan görevlerde yer alır. Labirent’e giren Koşuculardan biri değildir.
+                    <br /> <br />
+                    Görevi Kayran’ın günlük yaşamını sürdürmek, yiyecek üretimi ve temel ihtiyaçların karşılanmasına yardımcı olmaktır. Bu yüzden daha çok “hayatta kalma düzeni” tarafında, arka plan iş gücü olarak görev yapar.
+                    <br /> <br />
+                    Winston’ın tarafı Kayran’daki diğer gençlerle aynıdır ve WCKD’ye karşıdır. Ancak olaylara genelde daha temkinli ve korku odaklı yaklaşır. Özellikle Labirent ve Değişenler (Griever’lar) gibi tehditler karşısında daha çekingen bir yapısı vardır.
+                    <br /> <br />
+                    Hikâyedeki rolü, Kayran’ın sıradan yaşamını ve bu düzenin içinde yaşayan normal gençleri temsil etmektir. Ana karakterler kadar ön planda olmasa da, Labirent içindeki yaşamın gerçekliğini ve tehlikesini göstermek açısından önemli bir yan karakterdir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="arisModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">ARİS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Aris, The Maze Runner serisinde WCKD tarafından oluşturulan başka bir Labirent sisteminden gelen erkek bir denektir. Thomas’ın bulunduğu Kayran Labirenti’ne benzer şekilde, farklı bir grup üzerinde yürütülen deneyin parçasıdır.
+                    <br /> <br />
+                    Görevi doğrudan bir “meslek” değil, WCKD deneylerinde test deneği olarak bulunmaktır. Kendi Labirent’inden kaçmayı başardıktan sonra Thomas ve ekibinin bulunduğu gruba dahil olur. Bu yüzden iki farklı deney grubunu birbirine bağlayan karakterlerden biridir.
+                    <br /> <br />
+                    Aris’in tarafı başlangıçta WCKD ile doğrudan çatışma halinde değildir, çünkü onların deney sisteminin bir parçası olarak yetişmiştir. Ancak Thomas ve diğer Kayranlılarla tanıştıktan sonra WCKD’nin gerçek amacına karşı daha net bir tavır alır ve direniş tarafına geçer.
+                    <br /> <br />
+                    Hikâyedeki rolü, tek bir Labirent olmadığını ve WCKD’nin farklı gruplar üzerinde aynı deneyleri yürüttüğünü gösteren karakter olmasıdır. Aynı zamanda Thomas’ın dünyasının genişlemesini sağlayarak olayların sadece Kayran ile sınırlı olmadığını ortaya koyar.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lawranceModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">LAURANCE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Lawrence, The Maze Runner serisinde The Death Cure bölümünde görülen, Last City (WCKD kontrolündeki son büyük şehir) dışında yaşayan “isyan gruplarından” birinin lideridir.
+                    <br /> <br />
+                    Görevi, şehir dışında yaşayan direnişçileri organize etmek ve WCKD’ye karşı sabotaj ve saldırı operasyonları yürütmektir. Aynı zamanda Last City’ye giriş-çıkışları kontrol eden ve içerideki WCKD düzenini zayıflatmaya çalışan yeraltı direniş ağının bir parçasıdır.
+                    <br /> <br />
+                    Lawrence’ın tarafı kesin olarak WCKD karşıtıdır. WCKD’nin şehir içindeki kontrolüne, karantina sistemine ve insanları “tedavi bahanesiyle” deneylerde kullanmasına karşı çıkar.
+                    <br /> <br />
+                    Hikâyedeki rolü, WCKD’ye karşı oluşan geniş çaplı isyanın şehir dışındaki liderlerinden biri olmasıdır. Thomas ve ekibinin Last City sürecinde temas ettiği direniş yapılarının bir parçası olarak, final aşamasındaki çatışmanın zeminini oluşturan karakterlerden biridir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="avapaigeModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">AVA PAİGE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Ava Paige, The Maze Runner serisinde WCKD (WICKED – World In Catastrophe: Killzone Experiment Department) organizasyonunun en üst düzey yöneticilerinden biridir ve deneylerin ana mimarlarından sayılır.
+                    <br /> <br />
+                    Görevi, WCKD’nin “insanlığı kurtarmak” amacıyla yürüttüğü deneyleri planlamak, yönetmek ve sonuçlarını analiz etmektir. Labirentler, Scorch Trials ve diğer test süreçlerinin tamamı onun ve üst yönetimin kontrolü altında şekillenir. Karar mekanizmasında en kritik isimlerden biridir.
+                    <br /> <br />
+                    Ava Paige’in tarafı WCKD’dir ve organizasyonun hedefi olan “tedavi (cure) bulma” fikrine tamamen bağlıdır. Ancak yöntemleri son derece tartışmalıdır; insanları, özellikle çocukları deneylerde kullanarak sonuç elde etmeyi kabul eder.
+                    <br /> <br />
+                    Hikâyedeki rolü, WCKD’nin ideolojik ve bilimsel liderliğini temsil etmektir. Thomas ve diğer deneklerin yaşadığı tüm süreçlerin arkasındaki ana otorite figürlerinden biridir ve serinin ana çatışmasının kaynağındaki sistemin beyin kısmını oluşturur.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="jansonModal" tabindex="-1" aria-labelledby="thomasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+        <div class="modal-content bg-dark text-white">
+
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="thomasModalLabel">JANSON</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color:white;"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="finlandica">
+                    Janson, The Maze Runner serisinde WCKD organizasyonunun üst düzey yöneticilerinden biridir ve özellikle The Death Cure bölümünde “Last City” içinde önemli bir otorite figürü olarak öne çıkar. Dışarıya karşı genellikle WCKD’nin resmi yüzlerinden biri gibi davranır.
+                    <br /> <br />
+                    Görevi, Last City’de WCKD operasyonlarını yönetmek, deneklerin kontrolünü sağlamak ve “tedavi (cure)” çalışmalarını ilerletmektir. Aynı zamanda Thomas ve diğer kaçak deneklerin yeniden yakalanması ve WCKD tesislerine getirilmesi süreçlerini koordine eder.
+                    <br /> <br />
+                    Janson’ın tarafı WCKD’dir, ancak Ava Paige’e kıyasla çok daha radikal ve acımasız bir yaklaşım sergiler. İnsanları deneylerde kullanma konusunda daha serttir ve hedefe ulaşmak için her yöntemi meşru görür.
+                    <br /> <br />
+                    Hikâyedeki rolü, WCKD’nin sahadaki uygulayıcı ve baskıcı yüzünü temsil etmektir. Ava Paige sistemin beyni ise, Janson daha çok sahadaki kontrol ve zorlayıcı güçtür. Thomas ve ekibinin final kaçış sürecinde ana antagonistik figürlerden biridir.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
